@@ -1,544 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal portfolio of Elsabeth Berhanu — Software Engineering student and aspiring Software Developer.">
-    <meta name="author" content="Elsabeth Berhanu">
-
-    <title>Elsabeth Berhanu | Portfolio</title>
-    <div class="logo">
-    <span>EB</span>
-    <!-- this is style.css file 
-    .logo {
-    width: 150px;
-    height: 150px;
-    background-color: #2460a5;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.logo span {
-    width: 115px;
-    height: 115px;
-    background-color: white;
-    border-radius: 50%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    color: #2460a5;
-    font-size: 45px;
-    font-weight: bold;
-    font-family: Arial, sans-serif;
-}-->
-</div>
-       <h2> Elsabeth Berhanu </h2>
-
-
-    <img  src="C:\Users\HP\MY PORTFOLI\images\profile.jpg" 
-    alt="image of Elsabeth Berhanu" 
-    type="image/png"
-     
-    loading="eager">
-
+  <meta charset="UTF-8">
+  <title>Elsabeth Berhanu | Portfolio</title>
+  <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
 <body>
 
-   <!-- <a class="skip-link" href="#main-content">Skip to main content</a> -->
+  <h1>Elsabeth Berhanu</h1>
+  <img src="images/profile.jpg" alt="Portrait of Elsabeth Berhanu smiling" title="Elsabeth Berhanu" width="200" height="200">
+  <p>Software Engineering student and aspiring web developer.</p>
 
-    <!-- HEADER & NAVIGATION -->
-    <header>
-<button type="button">Hire me</button>
-       <nav>
-             
-                 <a href="#about">About</a></li>
- &vert;
-                <!--<li><a href="#what inspires me">What inspires me</a></li>-->
-                 <a href="#skills">Skills</a></li> 
-  &vert;
-               <!-- <li><a href="#roadmap">Roadmap</a></li>-->
-               <!-- <li><a href="#glossary">Glossary</a></li>-->
-                 <a href="#projects">Projects</a></li> &vert;
-                <a href="#education">Education</a></li>&vert;
-                 <a href="#contact">Contact</a></li> &vert;
-                <a href="projects.html" class="active">My Projects &#8599;</a></li>
-          </header>
-        </nav>
-    </header>
+  <p>
+    <a href="#about">About</a> |
+    <a href="#skills">Skills</a> |
+    <a href="#projects">Projects</a> |
+    <a href="#education">Education</a> |
+    <a href="#contact">Contact</a> |
+    <a href="projects.html">All Projects</a>
+  </p>
 
-    <main id="main-content">
+  <hr>
 
-        <!-- SECTION 1: ABOUT ME -->
+  <h2 id="about">About Me</h2>
+  <p>I am a 3<sup>rd</sup> year <strong>Software Engineering</strong> student at Addis Ababa Science and Technology University (AASTU).
+    I <em>really</em> enjoy building websites, and my current goal is to
+    <mark>become a full-stack web developer</mark>.</p>
+  <p>Languages I have used: <b>Python</b>, <b>C++</b> and <i>a little</i> JavaScript.</p>
+  <p>Fun fact: I drink 2 litres of H<sub>2</sub>O while coding every day.</p>
 
-        <section id="about" aria-labelledby="about-heading">
+  <hr>
 
-            <h1 id="about-heading">About Me</h1>
+  <h2>What Inspires Me</h2>
+  <blockquote>
+    “The best way to predict the future is to invent it.” — Alan Kay
+  </blockquote>
+  <p>My teacher always says <q>practice beats theory</q>, so I code every day.</p>
+  <p>Book I am reading: <cite>Clean Code</cite> by Robert C. Martin</p>
 
-            <div class="profile-card">
+  <hr>
 
-                <img
-                    src="profile.jpg"
-                    alt="Portrait of Elsabeth Berhanu, a 3rd-year Software Engineering student at AASTU"
-                   >
+  <h2 id="skills">Skills</h2>
+  <ul>
+    <li>Programming Languages
+      <ul type="square">
+        <li>Python</li>
+        <li>C++</li>
+        <li>Java</li>
+      </ul>
+    </li>
+    <li>Web Development
+      <ul type="circle">
+        <li>HTML</li>
+        <li>CSS (learning)</li>
+        <li>JavaScript (next)</li>
+      </ul>
+    </li>
+    <li>Soft Skills
+      <ul>
+        <li>Teamwork</li>
+        <li>Presenting</li>
+      </ul>
+    </li>
+  </ul>
 
-                <div class="profile-text">
+  <h3>My Learning Roadmap</h3>
+  <ol type="1">
+    <li>HTML structure and content</li>
+    <li>CSS layout and design</li>
+    <li>JavaScript and the DOM</li>
+    <li>PHP and databases</li>
+    <li>Deploy my portfolio online</li>
+  </ol>
 
-                    <p>
-                        Hello! I am <strong>Elsabeth Berhanu</strong>, a <em>3rd-year</em>
-                        <mark>Software Engineering</mark> student at
-                        <strong>Addis Ababa Science and Technology University (AASTU)</strong>.
-                        My goal is to become an <strong>aspiring Software Developer</strong>
-                        who builds meaningful digital solutions.
-                    </p>
+  <h3>Tools I Use</h3>
+  <dl>
+    <dt>VS Code</dt>
+    <dd>The code editor I use for every lab.</dd>
+    <dt>Chrome DevTools</dt>
+    <dd>Inspects the HTML of any page and helps me find mistakes.</dd>
+    <dt>Git and GitHub</dt>
+    <dd>Saves versions of my code and shares my projects online.</dd>
+  </dl>
 
-                    <p>
-                        I am currently in my <sub>3</sub><sup>rd</sup> year of a five-year
-                        <abbr title="Bachelor of Science">BSc</abbr> programme, gaining
-                        hands-on experience in both <code>front-end</code> and
-                        <code>back-end</code> development.
-                    </p>
+  <hr>
 
-                   
-                    <p>
-                        My journey into software development started with a simple curiosity:
-                        <em>&#8220;How does a website actually work?&#8221;</em> and it has
-                        grown into a full-blown passion for crafting clean, efficient, and
-                        accessible code.
-                    </p>
+  <h2 id="projects">Projects</h2>
 
-    <div>  
-    <h3>Hear my introduction</h3>
-                    <audio controls>
-    <source src="audio/my-audio.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-</audio>
- </div>
+  <h3>Simple Calculator</h3>
+  <img src="images/project-calculator.png" alt="Screenshot of the calculator showing 12 + 30 = 42" width="400" height="250">
+  <p>A calculator that adds, subtracts, multiplies and divides.</p>
 
-                    <h2>What inspires me</h2>
-                    <blockquote>
-                        &#8220;The only way to do great work is to love what you do.&#8221;
+  <h3>Library Management System</h3>
+  <img src="images/project-library.png" alt="Screenshot of the Library Management System console menu" width="400" height="250">
+  <p>A console program for borrowing and returning books.</p>
 
-                        <footer>
-                            &#8212; <cite>Steve Jobs, Stanford Commencement Address (2005)</cite>
-                        </footer>
-                    </blockquote>
+  <h3>My First Program</h3>
+  <p>The first thing I wrote in Python was <code>print("Hello, World!")</code>.
+    Later I wrote this loop:</p>
+  <pre><code>for i in range(3):
+    print("Hello", i)
+</code></pre>
 
-
-</section>
-
-                  
-
-        <!-- SECTION 2: SKILLS -->
-        <section id="skills" aria-labelledby="skills-heading">
-
-            <h2 id="skills-heading">Skills</h2>
-
-            <ul>
-                <li>
-                    <strong>Programming &amp; Technical Skills</strong>
-
-                    <ul>
-                        <li>C++ &#8212; Systems programming and algorithmic problem-solving</li>
-                        <li>HTML5 &#8212; Semantic web page structure</li>
-                        <li>CSS3 &#8212; Styling, layout, and responsive design</li>
-                        <li>JavaScript &#8212; Interactive, client-side scripting</li>
-                    </ul>
-                </li>
-
-                <li>
-                    <strong>Soft Skills</strong>
-
-                    <ul>
-                        <li>Teamwork &#8212; Collaborative project delivery</li>
-                        <li>Problem Solving &#8212; Analytical and logical thinking</li>
-                        <li>Communication &#8212; Clear technical and non-technical writing</li>
-                    </ul>
-                </li>
-
-                <li>
-                    <strong>Tools &amp; Environments</strong>
-
-                    <ul>
-                        <li>VS Code &#8212; Primary code editor</li>
-                        <li>Git &amp; GitHub &#8212; Version control and collaboration</li>
-                        <li>Chrome DevTools &#8212; Debugging and performance profiling</li>
-                    </ul>
-                </li>
-            </ul>
-
-
-           <h3>Learning Roadmap</h3>
-
-            <p>
-                My planned steps to grow as a software developer over the next 12&#8211;18 months:
-            </p>
-
-            <ol>
-                <li><strong>Master JavaScript fundamentals</strong> &#8212; closures, async/await, and the DOM API.</li>
-                <li><strong>Learn React.js</strong> &#8212; component-based UIs and state management with hooks.</li>
-                <li><strong>Study Node.js &amp; Express</strong> &#8212; build RESTful APIs and server-side JavaScript.</li>
-                <li><strong>Explore databases</strong> &#8212; SQL (PostgreSQL) and NoSQL (MongoDB) fundamentals.</li>
-                <li><strong>Complete an open-source contribution</strong> &#8212; submit at least one accepted pull request.</li>
-                <li><strong>Build a full-stack capstone project</strong> &#8212; deploy a production-ready web application.</li>
-                <li><strong>Prepare for the job market</strong> &#8212; polish CV, LinkedIn, and GitHub; apply for junior roles.</li>
-            </ol>
-
-
-
-
-             <h3>Tools I used  </h3>
-
-            <p>Key tools I use daily, with brief definitions:</p>
-
-            <dl>
-                <dt>VS Code</dt>
-                <dd>
-                    <strong>Visual Studio Code</strong> &#8212; a free, open-source code editor
-                    by Microsoft with built-in Git support, IntelliSense auto-complete,
-                    and a rich extension marketplace.
-                </dd>
-
-                <dt>Git</dt>
-                <dd>
-                    A <em>distributed version-control system</em> that tracks changes to
-                    source code, enabling collaboration and safe experimentation through
-                    branches and commits.
-                </dd>
-
-                <dt>GitHub</dt>
-                <dd>
-                    A cloud-hosted platform for Git repositories, providing pull requests,
-                    issue tracking, Actions (CI/CD), and portfolio hosting via GitHub Pages.
-                </dd>
-
-                <dt>Chrome DevTools</dt>
-                <dd>
-                    A set of web-developer tools built directly into Google Chrome, used
-                    for inspecting the DOM, debugging JavaScript, profiling performance,
-                    and auditing accessibility.
-                </dd>
-              <dt>C++ Compiler (g++)</dt>
-                <dd>
-                    Part of the <abbr title="GNU Compiler Collection">GCC</abbr> toolchain;
-                    translates C++ source code into executable machine code for systems
-                    programming and algorithmic work.
-                </dd>
-            </dl>
-
-        </section>
-
-
- 
-
-         <section id="projects" aria-labelledby="projects-heading">
-
-            <h2 id="projects-heading">Projects</h2>
-          <h3>My First C++ Programme</h3>
-
-                    <pre><code>// Classic first programme -- Elsabeth's Hello World
-#include &lt;iostream&gt;
+  <h3>My First C++ Program</h3>
+  <pre><code>#include &lt;iostream&gt;
 using namespace std;
 
 int main() {
     cout &lt;&lt; "Hello, World! I am Elsabeth." &lt;&lt; endl;
     return 0;
-}</code></pre>
+}
+</code></pre>
 
-                </div>
-            </div>
+  <p><a href="projects.html">See all my projects →</a></p>
 
-        </section>
+  <hr>
 
+  <h2 id="education">Education</h2>
+  <h3>BSc in Software Engineering</h3>
+  <p>Addis Ababa Science and Technology University, 2023 – present</p>
 
-        <!-- SECTION 5: EDUCATION & ACADEMIC RECORD TABLE -->
-        <section id="education" aria-labelledby="education-heading">
+  <table border="1" cellpadding="8" cellspacing="0">
+    <caption>Academic Record — BSc in Software Engineering</caption>
+    <thead>
+      <tr>
+        <th>Year</th>
+        <th>Semester</th>
+        <th>Course</th>
+        <th>Credit Hours</th>
+        <th>Grade</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th rowspan="4">Year 1</th>
+        <td rowspan="2">Semester I</td>
+        <td>Fundamentals of Programming</td>
+        <td>5</td>
+        <td>A</td>
+      </tr>
+      <tr>
+        <!-- Year and Semester are already covered -->
+        <td>Applied Mathematics I</td>
+        <td>4</td>
+        <td>B+</td>
+      </tr>
+      <tr>
+        <!-- Year is still covered -->
+        <td rowspan="2">Semester II</td>
+        <td>Object Oriented Programming</td>
+        <td>5</td>
+        <td>A</td>
+      </tr>
+      <tr>
+        <td>Discrete Mathematics</td>
+        <td>4</td>
+        <td>B</td>
+      </tr>
+      <tr>
+        <th rowspan="2">Year 2</th>
+        <td rowspan="2">Semester I</td>
+        <td>Data Structures &amp; Algorithms</td>
+        <td>5</td>
+        <td>A-</td>
+      </tr>
+      <tr>
+        <td>Internet Programming I</td>
+        <td>5</td>
+        <td>A</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th colspan="3">Total credit hours</th>
+        <th>28</th>
+        <th></th>
+      </tr>
+    </tfoot>
+  </table>
 
-            <h2 id="education-heading">Education</h2>
+  <hr>
 
-            <h3>Addis Ababa Science and Technology University (AASTU)</h3>
+  <h2 id="contact">Contact</h2>
+  <p>Address:<br>Addis Ababa,<br>Ethiopia</p>
+  <p>Email: <a href="mailto:birhanuelsa55@gmail.com">birhanuelsa55@gmail.com</a></p>
+  <p>Phone: <a href="tel:+251976891411">+251 976 891 411</a></p>
+  <p>GitHub: <a href="https://github.com/elsa7-coder">github.com/elsa7-coder</a></p>
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/elsabethberhanu">linkedin.com/in/elsabethberhanu</a></p>
+  <p><a href="files/cv.pdf" download>Download my CV (PDF)</a></p>
 
-            <p>
-                <strong>Degree:</strong> BSc in Software Engineering &nbsp;|&nbsp;
-                <strong>Expected Graduation:</strong> 2026 &nbsp;|&nbsp;
-                <strong>Status:</strong> <em>3rd Year, 1st Semester (current)</em>
-            </p>
-
-            <div class="table-wrapper">
-
-                <table>
-
-                    <caption>Academic Record &#8212; BSc Software Engineering, AASTU</caption>
-
-                    <thead>
-                        <tr>
-                            <th scope="col">Year</th>
-                            <th scope="col">Semester</th>
-                            <th scope="col">Course Code</th>
-                            <th scope="col">Course Name</th>
-                            <th scope="col">Credit Hrs</th>
-                            <th scope="col">Grade</th>
-                        </tr>
-                    </thead>
-
-                    <tbody>
-
-                        <!-- Year 1 -->
-                        <tr>
-                            <td rowspan="4"><strong>Year 1</strong></td>
-                            <td rowspan="2">Sem 1</td>
-                            <td>SWEng 101</td>
-                            <td>Introduction to Programming (C++)</td>
-                            <td>3</td>
-                            <td>A</td>
-                        </tr>
-
-                        <tr>
-                            <td>Math 101</td>
-                            <td>Calculus I</td>
-                            <td>4</td>
-                            <td>B+</td>
-                        </tr>
-
-                        <tr>
-                            <td rowspan="2">Sem 2</td>
-                            <td>SWEng 102</td>
-                            <td>Object-Oriented Programming</td>
-                            <td>3</td>
-                            <td>A</td>
-                        </tr>
-
-                        <tr>
-                            <td>Math 102</td>
-                            <td>Calculus II</td>
-                            <td>4</td>
-                            <td>B</td>
-                        </tr>
-
-
-                        <!-- Year 2 -->
-                        <tr>
-                            <td rowspan="4"><strong>Year 2</strong></td>
-                            <td rowspan="2">Sem 1</td>
-                            <td>SWEng 201</td>
-                            <td>Data Structures &amp; Algorithms</td>
-                            <td>3</td>
-                            <td>A</td>
-                        </tr>
-
-                        <tr>
-                            <td>SWEng 202</td>
-                            <td>Database Systems</td>
-                            <td>3</td>
-                            <td>A&#8722;</td>
-                        </tr>
-
-                        <tr>
-                            <td rowspan="2">Sem 2</td>
-                            <td>SWEng 203</td>
-                            <td>Web Technologies (HTML / CSS / JS)</td>
-                            <td>3</td>
-                            <td>A+</td>
-                        </tr>
-
-                        <tr>
-                            <td>SWEng 204</td>
-                            <td>Software Engineering Principles</td>
-                            <td>3</td>
-                            <td>B+</td>
-                        </tr>
-
-
-                        <!-- Year 3 -->
-                        <tr>
-                            <td rowspan="2"><strong>Year 3</strong> &#x2731;</td>
-                            <td>Sem 1 (current)</td>
-                            <td>SWEng 301</td>
-                            <td>Operating Systems</td>
-                            <td>3</td>
-                            <td><em>In Progress</em></td>
-                        </tr>
-
-                        <tr>
-                            <td>Sem 1 (current)</td>
-                            <td>SWEng 302</td>
-                            <td>Computer Networks</td>
-                            <td>3</td>
-                            <td><em>In Progress</em></td>
-                        </tr>
-
-                    </tbody>
-
-                    <tfoot>
-                        <tr>
-                            <td colspan="4">
-                                Total Credit Hours Completed (Years 1&#8211;2)
-                            </td>
-                            <td>26</td>
-                            <td>GPA: <strong>3.7</strong></td>
-                        </tr>
-                    </tfoot>
-
-                </table>
-
-            </div>
-
-            <p>
-                <small>
-                    &#x2731; Year 3 courses are currently in progress;
-                    grades will be updated at semester end.
-                </small>
-            </p>
-
-        </section>
-
-
-        <!-- SECTION 6: CONTACT & IMAGE MAP -->
-        <section id="contact" aria-labelledby="contact-heading">
-
-            <h2 id="contact-heading">Contact</h2>
-
-            <p>
-                I am open to internships, collaborations, and new opportunities.
-                Reach out via any channel below!
-            </p>
-
-            <ul class="contact-list">
-
-                <!-- Email -->
-                <li>
-                   <!-- <span class="contact-icon" aria-hidden="true">&#x1F4E7;</span> -->
-                    <strong>Email:</strong>
-                    <a href="mailto:birhanuelsa55@gmail.com">
-                         birhanuelsa55@gmail.com
-                    </a>
-                </li>
-
-                <!-- Phone -->
-                <li>
-                    <!-- <span class="contact-icon" aria-hidden="true">&#x1F4F1;</span> -->
-                    <strong>Phone:</strong>
-                    <a href="tel:+251976891411">+251 976891411</a>
-                </li>
-
-                <!-- GitHub -->
-                <li>
-                    <!-- <span class="contact-icon" aria-hidden="true">&#x1F419;</span> -->
-                      <strong>GitHub:</strong>  
-                    <a href="https://github.com/elsa7-coder/MyPortfolio.git" target="_blank" rel="noopener noreferrer">
-                       elsa7-coder
-                    </a>
-                </li>
-
-                <!-- LinkedIn -->
-                <li>
-                   <!-- <span class="contact-icon" aria-hidden="true">&#x1F4BC;</span> -->
-                    <strong>LinkedIn:</strong>
-                    <a href="https://linkedin.com/in/elsabethberhanu" target="_blank" rel="noopener noreferrer">
-                        linkedin.com/in/elsabethberhanu
-                    </a>
-                </li>
-
-                <!-- CV Download -->
-                <li>
-                   <!-- <span class="contact-icon" aria-hidden="true">&#x1F4C4;</span> -->
-                    <strong>Curriculum Vitae:</strong>
-
-                    <a href="ElsabethBerhanu_CV.pdf"
-                       class="btn-download"
-                       download="ElsabethBerhanu_CV.pdf">
-                        &#x2B07; Download CV (PDF)
-                    </a>
-                </li>
-
-            </ul>
-
-
-            <!-- Image Map -->
-            <h3>Connect With Me &#8212; Interactive Banner</h3>
-
-            <p>Click any highlighted zone on the banner below to connect:</p>
-
-            <div class="map-wrapper">
-
-                <img
-                    src="connect-banner.png"
-                    alt="Interactive connect banner: left zone = GitHub, centre circle = Email, right zone = LinkedIn"
-                    width="600"
-                    height="200"
-                    usemap="#connect-map"
-                >
-
-            </div>
-
-
-            <!-- Image Map Areas -->
-            <map name="connect-map">
-
-                <!-- GitHub Rectangle -->
-                <area
-                    shape="rect"
-                    coords="10,10,190,190"
-                    href="https://github.com/elsa7-coder"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    alt="Visit Elsabeth's GitHub profile"
-                    title="GitHub &#8212; @elsabethberhanu"
-                >
-
-                <!-- Email Circle -->
-                <area
-                    shape="circle"
-                    coords="300,100,70"
-                    href="mailto:birhanuelsa55@gmail.com"
-                    alt="Send an email to Elsabeth"
-                    title="Email Elsabeth"
-                >
-
-                <!-- LinkedIn Rectangle -->
-                <area
-                    shape="rect"
-                    coords="410,10,590,190"
-                    href="https://linkedin.com/in/elsabethberhanu"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    alt="Visit Elsabeth's LinkedIn profile"
-                    title="LinkedIn &#8212; Elsabeth Berhanu"
-                >
-
-            </map>
-
-            <p>
-                <strong>Image-map zones:</strong>
-                Left rect &#8594; GitHub &nbsp;|&nbsp;
-                Centre circle &#8594; Email &nbsp;|&nbsp;
-                Right rect &#8594; LinkedIn
-            </p>
-
-        </section>
-
-    </main>
-
-
-    <!-- SITE FOOTER -->
-    <footer>
-
-        <p>
-            &copy; 2024 <strong>Elsabeth Berhanu</strong> &mdash;
-            BSc Software Engineering Student,
-            <abbr title="Addis Ababa Science and Technology University">AASTU</abbr>.
-        </p>
-
-        <p>
-            <a href="#about">&#8593; Back to top</a>
-            &nbsp;|&nbsp;
-            <a href="projects.html">View My Projects &#8594;</a>
-        </p>
-
-    </footer>
+  <h3>Connect with me</h3>
+  <img src="images/connect-banner.png" usemap="#connectmap" alt="Connect banner: GitHub, LinkedIn, Email" width="600" height="200">
+  <map name="connectmap">
+    <area shape="rect" coords="20,40,180,160" href="https://github.com/elsa7-coder" alt="GitHub">
+    <area shape="circle" coords="300,100,70" href="https://www.linkedin.com/in/elsabethberhanu" alt="LinkedIn">
+    <area shape="rect" coords="420,40,580,160" href="mailto:birhanuelsa55@gmail.com" alt="Email">
+  </map>
 
 </body>
 </html>
