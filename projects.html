@@ -2,72 +2,91 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projects by Elsabeth Berhanu &#8212; Software Engineering student at AASTU.">
+  <meta name="keywords" content="Elsabeth Berhanu, projects, calculator, library management, C++">
+  <meta name="author" content="Elsabeth Berhanu">
   <title>Projects | Elsabeth Berhanu</title>
   <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
 
-  <p><a href="index.html">← Back to Home</a></p>
+  <header>
+    <nav>
+      <p><a href="index.html">← Back to Home</a></p>
+    </nav>
+  </header>
 
-  <h1>My Projects</h1>
-  <p>Details of every project I have built. Below is the project summary table followed by technical details for each project.</p>
+  <main>
 
-  <table border="1" cellpadding="8" cellspacing="0">
-    <caption>Project Summary</caption>
-    <thead>
-      <tr>
-        <th>Project</th>
-        <th>Language</th>
-        <th>Year</th>
-        <th>Link</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Simple Calculator</td>
-        <td>C++</td>
-        <td>2024</td>
-        <td><a href="#calculator">View Details</a></td>
-      </tr>
-      <tr>
-        <td>Library Management System</td>
-        <td>C++</td>
-        <td>2024</td>
-        <td><a href="#library">View Details</a></td>
-      </tr>
-    </tbody>
-    <tfoot>
-      <tr>
-        <th colspan="3">Total projects</th>
-        <th>2</th>
-      </tr>
-    </tfoot>
-  </table>
+    <h1>My Projects</h1>
+    <p>Details of every project I have built. Below is the project summary table followed by technical details for each project.</p>
 
-  <hr>
+    <table border="1" cellpadding="8" cellspacing="0">
+      <caption>Project Summary</caption>
+      <thead>
+        <tr>
+          <th>Project</th>
+          <th>Language</th>
+          <th>Year</th>
+          <th>Link</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Simple Calculator</td>
+          <td>C++</td>
+          <td><time datetime="2024">2024</time></td>
+          <td><a href="#calculator">View Details</a></td>
+        </tr>
+        <tr>
+          <td>Library Management System</td>
+          <td>C++</td>
+          <td><time datetime="2024">2024</time></td>
+          <td><a href="#library">View Details</a></td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th colspan="3">Total projects</th>
+          <th>2</th>
+        </tr>
+      </tfoot>
+    </table>
 
-  <h2 id="calculator">Simple Calculator</h2>
-  <img src="images/project-calculator.png" alt="Screenshot of the calculator showing 12 + 30 = 42" width="400" height="250">
-  <p>A calculator that adds, subtracts, multiplies and divides.</p>
+    <article id="calculator">
+      <h2>Simple Calculator</h2>
+      <img src="images/project-calculator.png" alt="Screenshot of the calculator showing 12 + 30 = 42" width="400" height="250">
+      <p>A calculator that adds, subtracts, multiplies and divides.</p>
 
-  <h3>How I built it</h3>
-  <ol>
-    <li>Designed the command-line interface to prompt the user for numbers and operations.</li>
-    <li>Implemented separate arithmetic functions for addition, subtraction, multiplication, and division.</li>
-    <li>Added a divide-by-zero check to prevent runtime errors and provide clear error messages.</li>
-    <li>Wrapped operations in a loop with a switch statement allowing continuous calculations until exit.</li>
-  </ol>
+      <h3>Watch the demo</h3>
+      <video controls poster="images/project-demo-poster.jpg" width="640" height="360">
+        <source src="media/project-demo.mp4" type="video/mp4">
+        <source src="media/project-demo.webm" type="video/webm">
+        <track src="media/project-demo.vtt" kind="captions" srclang="en" label="English" default>
+        Your browser does not support the video tag.
+      </video>
 
-  <h3>Technologies Used</h3>
-  <ul>
-    <li>C++</li>
-    <li>Standard I/O Streams (iostream)</li>
-    <li>I/O Manipulators (iomanip)</li>
-    <li>GCC / g++ Compiler</li>
-  </ul>
+      <details open>
+        <summary>How I built it</summary>
+        <ol>
+          <li>Designed the command-line interface to prompt the user for numbers and operations.</li>
+          <li>Implemented separate arithmetic functions for addition, subtraction, multiplication, and division.</li>
+          <li>Added a divide-by-zero check to prevent runtime errors and provide clear error messages.</li>
+          <li>Wrapped operations in a loop with a switch statement allowing continuous calculations until exit.</li>
+        </ol>
+      </details>
 
-  <h3>Code Excerpt</h3>
-  <pre><code>// Simple Calculator — Division Function
+      <h3>Technologies Used</h3>
+      <ul>
+        <li>C++</li>
+        <li>Standard I/O Streams (iostream)</li>
+        <li>I/O Manipulators (iomanip)</li>
+        <li>GCC / g++ Compiler</li>
+      </ul>
+
+      <h3>Code Excerpt</h3>
+      <pre><code>// Simple Calculator — Division Function
 double divide(double a, double b) {
     if (b == 0) {
         cout &lt;&lt; "Error: Division by zero is undefined." &lt;&lt; endl;
@@ -76,31 +95,33 @@ double divide(double a, double b) {
     return a / b;
 }</code></pre>
 
-  <p><strong>Source code:</strong> <a href="https://github.com/elsa7-coder">github.com/elsa7-coder</a></p>
+      <p><strong>Source code:</strong> <a href="https://github.com/elsa7-coder">github.com/elsa7-coder</a></p>
+    </article>
 
-  <hr>
+    <article id="library">
+      <h2>Library Management System</h2>
+      <img src="images/project-library.png" alt="Screenshot of the Library Management System console menu" width="400" height="250">
+      <p>A console program for borrowing and returning books.</p>
 
-  <h2 id="library">Library Management System</h2>
-  <img src="images/project-library.png" alt="Screenshot of the Library Management System console menu" width="400" height="250">
-  <p>A console program for borrowing and returning books.</p>
+      <details>
+        <summary>How I built it</summary>
+        <ol>
+          <li>Defined the Book data structure holding ID, title, author, and checkout availability status.</li>
+          <li>Built a Library class managing vector collections of books with add, borrow, and return methods.</li>
+          <li>Implemented input validation to ensure requested book IDs exist before updating status.</li>
+          <li>Integrated file storage using fstream to persist library records across application sessions.</li>
+        </ol>
+      </details>
 
-  <h3>How I built it</h3>
-  <ol>
-    <li>Defined the Book data structure holding ID, title, author, and checkout availability status.</li>
-    <li>Built a Library class managing vector collections of books with add, borrow, and return methods.</li>
-    <li>Implemented input validation to ensure requested book IDs exist before updating status.</li>
-    <li>Integrated file storage using fstream to persist library records across application sessions.</li>
-  </ol>
+      <h3>Technologies Used</h3>
+      <ul>
+        <li>C++ (Object-Oriented Programming)</li>
+        <li>Standard Template Library (vector, string)</li>
+        <li>File Streams (fstream) for data persistence</li>
+      </ul>
 
-  <h3>Technologies Used</h3>
-  <ul>
-    <li>C++ (Object-Oriented Programming)</li>
-    <li>Standard Template Library (vector, string)</li>
-    <li>File Streams (fstream) for data persistence</li>
-  </ul>
-
-  <h3>Code Excerpt</h3>
-  <pre><code>// Library Management System — Book Structure
+      <h3>Code Excerpt</h3>
+      <pre><code>// Library Management System — Book Structure
 struct Book {
     int id;
     string title;
@@ -108,16 +129,24 @@ struct Book {
     bool isAvailable;
 };</code></pre>
 
-  <p><strong>Source code:</strong> <a href="https://github.com/elsa7-coder">github.com/elsa7-coder</a></p>
+      <p><strong>Source code:</strong> <a href="https://github.com/elsa7-coder">github.com/elsa7-coder</a></p>
+    </article>
 
-  <hr>
+    <section id="references">
+      <h2>External References &amp; Navigation</h2>
+      <p>
+        <a href="https://www.w3.org/">Official W3C HTML Reference</a> |
+        <a href="index.html#contact">Contact Elsabeth on Home Page</a> |
+        <a href="index.html">← Back to Home</a>
+      </p>
+    </section>
 
-  <h2>External References &amp; Navigation</h2>
-  <p>
-    <a href="https://www.w3.org/">Official W3C HTML Reference</a> |
-    <a href="index.html#contact">Contact Elsabeth on Home Page</a> |
-    <a href="index.html">← Back to Home</a>
-  </p>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Elsabeth Berhanu. All rights reserved.</p>
+    <p>Last updated: <time datetime="2026-11-05">5 November 2026</time></p>
+  </footer>
 
 </body>
 </html>
